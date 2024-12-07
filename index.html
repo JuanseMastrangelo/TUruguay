@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUruguay - Tours y Actividades en Uruguay</title>
+
+    <link rel="shortcut icon" href="./favicon.jpg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <header class="header main" data-header style="z-index: 1000;">
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-top">
+        <div class="container">
+          <a href="#whatsapp-bot" class="helpline-box">
+            <div class="icon-box">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+
+            <div class="wrapper">
+              <p class="helpline-title">Usar Whatsapp Chatbot</p>
+            </div>
+          </a>
+
+          <a href="#" class="logo" style="font-size: 30px;font-weight: bold;">
+            TUruguay
+          </a>
+
+          <div class="header-btn-group">
+            <div class="hide-on-mobile">
+              <button style="display: flex; gap: 5px;align-items: center;color: white;margin-right: 10px;" aria-label="Search">
+                Español
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+            </div>
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search"></ion-icon>
+            </button>
+
+            <button
+              class="nav-open-btn"
+              aria-label="Open Menu"
+              data-nav-open-btn
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <span class="logo" style="font-size: 30px;color: black; font-weight: bold;">
+                TUruguay
+              </span>
+
+              <button
+                class="nav-close-btn"
+                aria-label="Close Menu"
+                data-nav-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="/" class="navbar-link" data-nav-link>Inicio</a>
+              </li>
+
+              <li>
+                <a href="#destinos" class="navbar-link" data-nav-link>Descubri Uruguay</a>
+              </li>
+
+              <li>
+                <a href="#tuActividades" class="navbar-link" data-nav-link>TuActividades</a>
+              </li>
+
+              <li>
+                <a href="#eventos" class="navbar-link" data-nav-link>Eventos</a>
+              </li>
+
+              <li>
+                <a href="#galeria" class="navbar-link" data-nav-link>Galeria</a>
+              </li>
+
+              <li class="show-on-mobile">
+                <button class="navbar-link" style="display: flex; gap: 5px;align-items: center;margin-right: 10px;" aria-label="Search">
+                  Español
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="btn btn-primary">Ser colaborador</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home" style="position: relative;background-image: url('./assets/images/hero-banner.png');">
+          <div class="container">
+            <h2 class="h1 hero-title">La Paloma</h2>
+
+            <p class="hero-text">
+              Esta ciudad portuaria cuenta con 22 kilómetros de hermosas playas y vasta oferta turística. En sus entornos se encuentran algunos de los mejores lugares turísticos de Uruguay para amantes de la naturaleza y las playas.
+            </p>
+
+            <div class="btn-group">
+              <a class="btn btn-secondary" href="/#tuActividades">Explorar</a>
+            </div>
+
+            <div style="width: 100%;position: absolute; left: 0px; bottom: 1.875rem">
+              <div class="btn-group">
+                <img src="/assets/images/scroll-down-mouse.gif" width="80"/>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      
+
+        <!-- 
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destinos">
+        <div class="container">
+          <p class="section-subtitle">Lugares para explorar</p>
+
+          <h2 class="h2 section-title">Destinos Populares</h2>
+
+          <ul class="popular-list">
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img
+                    src="./assets/images/punta-del-este.png"
+                    alt="Punta del Este"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="card-content" style="border: 1px solid rgb(71, 68, 68)">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title text">
+                    Punta del Este
+                  </h3>
+
+                  <p class="card-text">
+                   Destino ideal para quienes buscan lujo, relax y entretenimiento.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img
+                    src="./assets/images/colonia.png"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="card-content" style="border: 1px solid rgb(71, 68, 68)">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title text">
+                    Colonia
+                  </h3>
+
+                  <p class="card-text">
+                    Es perfecta para los amantes de la historia y el arte.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img
+                    src="./assets/images/montevideo.png"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="card-content" style="border: 1px solid rgb(71, 68, 68)">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title text">
+                    <a href="#">Montevideo</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Destaca por su cultura y arquitectura colonial y moderna.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <button class="btn btn-primary" disabled>Visitar Mas Destinos</button>
+        </div>
+      </section>
+
+
+      <div id="whatsapp-bot">
+        <div class="hide-on-mobile" style="height: 100px"></div>
+      </div>
+
+        <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container" style="background-color: #7BBCB0;padding: 30px;">
+          <div class="cta-content">
+            <p class="section-subtitle">Descubre Uruguay</p>
+      
+            <h2 class="h2 section-title" style="margin-bottom: 1.25rem;">
+              Agente Virtual desde Whatsapp
+            </h2>
+      
+            <p class="section-text" style="margin-bottom: 20px;">
+              ¿Buscas actividades culturales, aventuras al aire libre o los mejores lugares para relajarte en Uruguay? Lleva nuestro chatbot de WhatsApp a todas partes, facil de acceder, recomendaciones, precios y más. <br /><br /><b style="font-size: 1.125rem;">Accesible en todo momento.</b>
+            </p>
+
+            <ul class="text hide-on-mobile" style="color: white;font-size: 14px;margin-bottom: 20px;">
+              <li>- Asistencia rápida y personalizada.</li>
+              <li>- Información detallada sobre actividades y precios.</li>
+              <li>- Disponible 24/7 para planificar tus actividades.</li>
+              <li>- Acceso fácil desde WhatsApp.</li>
+            </ul>
+
+            
+            <button class="btn btn-secondary">
+              Chatear ahora
+            </button>
+          </div>
+        </div>
+      
+        <div class="chatbot-video">
+          <img src="/assets/images/whatsapp.gif" />
+        </div>
+      </section>
+
+      
+        <!-- 
+        - #PACKAGE
+      -->
+        
+      <div id="tuActividades">
+        <div class="hide-on-mobile" style="height: .625rem"></div>
+      </div>
+
+      <section class="package" id="tuActividades">
+        <div class="container">
+          <p class="section-subtitle">Tours y Actividades</p>
+
+          <h2 class="h2 section-title">TuActividades Destacadas</h2>
+
+
+          <ul class="package-list" style="margin-top: 70px;">
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/actividad-1.jpg"
+                    alt="Punta del Este City Tour"
+                    loading="lazy"
+                  />
+                </figure>
+          
+                <div class="card-content">
+                  <h3 class="h3 card-title">Punta del Este City Tour</h3>
+                  <p class="card-text">
+                    Recorrido por los principales puntos turísticos: La Mano, Casapueblo, el puerto y playas exclusivas.
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="calendar"></ion-icon>
+                        <p class="text">Todos los días</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Plaza Artigas, 20400, Punta del Este</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+          
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(15 reviews)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star-half" style="color: yellow"></ion-icon>
+                    </div>
+                  </div>
+                  <p class="price">$250 <span>/ por persona</span></p>
+                  <a class="btn btn-secondary" href="/punta-del-este-tour.html">Más Info</a>
+                </div>
+              </div>
+            </li>
+          
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/actividad-2.jpg"
+                    alt="Salto en Paracaídas en Punta del Este"
+                    loading="lazy"
+                  />
+                </figure>
+            
+                <div class="card-content">
+                  <h3 class="h3 card-title">Salto en Paracaídas en Punta del Este</h3>
+                  <p class="card-text">
+                    Vive una experiencia inolvidable saltando desde 3.000 metros sobre las hermosas playas de Punta del Este con instructores certificados.
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="calendar"></ion-icon>
+                        <p class="text">Sábados y Domingos</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Aeropuerto Laguna del Sauce</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(19 reviews)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star-outline" style="color: yellow"></ion-icon>
+                    </div>
+                  </div>
+                  <p class="price">$8000 <span>/ por persona</span></p>
+                  <a class="btn btn-secondary" href="/Salto-en-Paracaídas-en-Punta-del-Este.html">Más Info</a>
+                </div>
+              </div>
+            </li>
+          
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/actividad-3.png"
+                    alt="Aventura en Sierra de las Ánimas"
+                    loading="lazy"
+                  />
+                </figure>
+          
+                <div class="card-content">
+                  <h3 class="h3 card-title">Aventura en Sierra de las Ánimas</h3>
+                  <p class="card-text">
+                    Senderismo guiado por la Sierra de las Ánimas, con paradas en miradores y cascadas naturales.
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="calendar"></ion-icon>
+                        <p class="text">Solo fines de semana</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Ruta 60, Km 36, Pan de Azúcar</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+          
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(10 reviews)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star-outline" style="color: yellow"></ion-icon>
+                    </div>
+                  </div>
+                  <p class="price">$300 <span>/ por persona</span></p>
+                  <a href="/Aventura-en-Sierra-de-las-Animas.html" class="btn btn-secondary">Más Info</a>
+                </div>
+              </div>
+            </li>
+          
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img
+                    src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/528040933.jpg?k=f0f6f390beb1d4b0b1435f1745e409e4810a4f5838944931e702ebaaebb18f46&o=&hp=1"
+                    alt="Domo y Observación de Estrellas en la Laguna del Sauce"
+                    loading="lazy"
+                  />
+                </figure>
+          
+                <div class="card-content">
+                  <h3 class="h3 card-title">Domo y Observación de Estrellas en la Laguna del Sauce</h3>
+                  <p class="card-text">
+                    Pasa una noche en un exclusivo domo geodésico en la orilla de la Laguna del Sauce, disfrutando de una experiencia única de observación de estrellas. Con la guía de un experto, podrás aprender sobre las constelaciones y el cielo nocturno, mientras disfrutas de la tranquilidad de la naturaleza.
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="calendar"></ion-icon>
+                        <p class="text">Fines de semana</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Laguna del Sauce, Punta Ballena</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+          
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(30 reviews)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                      <ion-icon name="star" style="color: yellow"></ion-icon>
+                    </div>
+                  </div>
+                  <p class="price">$1300 <span>/ por persona</span></p>
+                  <a class="btn btn-secondary" href="/domo-y-observacion-de-estrellas-en-la-laguna-del-sauce.html">Más Info</a>
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+
+          <button class="btn btn-primary">Explorar Todas Las Actividades</button>
+        </div>
+      </section>
+
+      
+
+        <!-- 
+        - # Events
+      -->
+
+      <section class="popular" id="eventos">
+        <div class="container">
+
+          <h2 class="h2 section-title">Proximos Eventos</h2>
+
+          <ul class="popular-list">
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img
+                    src="./assets/images/evento-1.webp"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title text">
+                    Encendido del árbol de navidad
+                  </h3>
+
+                  <p class="card-text">
+                   Árbol de Navidad y el Show de la Banda Departamental.
+                  </p>
+                  <a class="btn btn-primary" style="margin-top: 1.25rem;" href="/Encendido-del-arbol-de-navidad.html">
+                    <div style="display: flex;justify-content: space-between; align-items: center;">
+                      Ver detalles
+                      <ion-icon name="arrow-forward-circle-outline" style="font-size: 1.25rem"></ion-icon>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img
+                    src="./assets/images/evento-2.jpg"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title text">
+                    En Navidad
+                  </h3>
+
+                  <p class="card-text">
+                   Show Matías Valdez, Premios, Papá Novel, Juegos.
+                  </p>
+                  <a class="btn btn-primary" style="margin-top: 1.25rem;" href="/En-Navidad.html">
+                    <div style="display: flex;justify-content: space-between; align-items: center;">
+                      Ver detalles
+                      <ion-icon name="arrow-forward-circle-outline" style="font-size: 1.25rem"></ion-icon>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img
+                    src="./assets/images/evento-3.webp"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title text">
+                    Exposición fotográfica "Galicia bella"
+                  </h3>
+
+                  <p class="card-text">
+                   Compuesta por 46 fotografías.
+                  </p>
+                  <a class="btn btn-primary" style="margin-top: 1.25rem;" href="/Exposicion-fotografica-Galicia-bella.html">
+                    <div style="display: flex;justify-content: space-between; align-items: center;">
+                      Ver detalles
+                      <ion-icon name="arrow-forward-circle-outline" style="font-size: 1.25rem"></ion-icon>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <button class="btn btn-primary" disabled>Ver todos los eventos</button>
+        </div>
+      </section>
+
+
+        <!-- 
+        - #GALLERY
+      -->
+
+        <section class="gallery" id="galeria">
+          <div class="container">
+            <p class="section-subtitle">Galería de Imagenes</p>
+
+            <h2 class="h2 section-title">Fotos enviadas por viajeros</h2>
+
+            <p class="section-text">Puedes compartir tu experiencia al canal de comunicación o a nuestro chat bot de whatsapp.</p>
+
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="https://imgs.elpais.com.uy/dims4/default/7a04979/2147483647/strip/true/crop/1000x688+0+31/resize/1440x990!/quality/90/?url=https%3A%2F%2Fel-pais-uruguay-production-web.s3.us-east-1.amazonaws.com%2Fbrightspot%2F17%2Fff%2F527957be47eab043dec636c5c7db%2Fretiro-lavalleja-1.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="https://periodistasviajeros.com/wp-content/uploads/2020/03/Lote-8-Maldonado-Uruguay.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="https://mediaim.expedia.com/destination/2/a671dde635d2a7568e55b44ccc7483a6.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="https://images.musement.com/cover/0098/70/thumb_9769237_cover_header.jpeg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="https://cronicasdeleste.com.uy/yapla4234.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.png" alt="TUruguay logo" />
+            </a>
+
+            <p class="footer-text">
+              Hacemos visible lo invisible.
+            </p>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="contact-title">Contacto</h4>
+
+            <ul>
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <a href="#" class="contact-link"
+                  >info@turuguay.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-form">
+            <p class="form-text">
+              Suscribite a nuestro newsletter para recibir promociones y actividades!
+            </p>
+
+            <form action="#" class="form-wrapper">
+              <input
+                type="email"
+                name="email"
+                class="input-field"
+                placeholder="Ingresar email..."
+                required
+              />
+
+              <button type="submit" class="btn btn-secondary">Suscribirme</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2024 <a href="">Turuguay</a>.
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Politicas</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Terminos & Condiciones</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <a href="#whatsapp-bot" style="position: fixed; top: 50%; right: 0; transform: translateY(-50%); background-color: #FFFFFF; color: #000; padding: 20px 10px; border-radius: 5px 0 0 5px; writing-mode: vertical-rl; text-align: center; font-size: 14px; font-weight: bold; cursor: pointer; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);z-index: 1000">
+      ASISTENTE VIRTUAL
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

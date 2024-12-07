@@ -1,0 +1,44 @@
+
+.container-single-article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:20px;
+}
+.single-article-reserva {
+  flex: 1;
+  position: sticky;
+  top: 6rem;
+  width: 100%;
+  margin-top: 4.375rem;
+}
+
+
+.single-article-flex-mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.5rem;
+  gap:30px;
+}
+
+
+
+
+@media (min-width: 992px) {
+  .container-single-article {
+    flex-direction: row;
+  }
+  .single-article-reserva {
+    width: inherit;
+    margin-top: 0px;
+  }
+
+  .single-article-flex-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 1.25rem 2.5rem;
+    gap:20px;
+  }
+
+}
+
